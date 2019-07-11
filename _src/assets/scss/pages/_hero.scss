@@ -1,0 +1,36 @@
+.hero {
+    background-image: url('/assets/images/cover.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero_btn-menu {
+    background: url('/assets/images/ico-menu.svg') no-repeat $colorBlue center;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.hero_title {
+    color: $colorPrimary;
+    text-transform: uppercase;
+}
+
+.hero_desc {
+    color: $colorPrimary;
+}
+
+.hero_button {
+    background: url('/assets/images/ico-scroll-down.svg') no-repeat $colorPrimary center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
