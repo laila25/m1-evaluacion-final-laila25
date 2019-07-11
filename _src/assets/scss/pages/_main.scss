@@ -1,0 +1,39 @@
+.main {
+    padding: 0 15px;
+}
+
+.main_text {
+    font-family: $fontText;
+    color: $colorLightBlue;
+    font-size: 14px;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.main_title {
+    font-family: $fontTitle;
+    color: $colorSecudary;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.main_content {
+    font-family: $fontText;
+    color: $colorSecudary;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.main_btn {
+    font-family: $fontText;
+    color: $colorButtons;
+    font-size: 20px;
+    text-align: center;
+    width: 76px;
+    line-height: 45px;
+    border: $colorButtons solid 2px;
+    border-radius: 22.5px;
+    margin-bottom: 45px;
+}
