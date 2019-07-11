@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('/assets/images/cover.jpg');
+    background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -10,7 +10,7 @@
     padding: 0 15px;
     
     &_btn-menu {
-        background: url('/assets/images/ico-menu.svg') no-repeat $colorBlue center;
+        background: url('../images/ico-menu.svg') no-repeat $colorBlue center;
         width: 40px;
         height: 40px;
         position: fixed;
@@ -59,7 +59,7 @@
     }
 
     &_button {
-        background: url('/assets/images/ico-scroll-down.svg') no-repeat $colorPrimary center;
+        background: url('../images/ico-scroll-down.svg') no-repeat $colorPrimary center;
         width: 45px;
         height: 45px;
         border-radius: 50%;
