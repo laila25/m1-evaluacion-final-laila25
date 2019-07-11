@@ -1,0 +1,197 @@
+.main_ppal {
+    padding: 0 15px;
+    
+    @media all and (min-width: 768px) {
+        padding: 0 39px;
+    }
+    
+    @media all and (min-width: 1200px) {
+        padding: 0 275px;
+    }
+    
+    &_text {
+        font-family: $fontText;
+        color: $colorLightBlue;
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        text-transform: capitalize;
+        
+        @media all and (min-width: 1200px) {
+            font-size: 16px;
+            margin-top: 60px;
+        }
+    }
+    
+    &_title {
+        font-family: $fontTitle;
+        color: $colorSecudary;
+        font-size: 24px;
+        text-transform: capitalize;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        
+        @media all and (min-width: 768px) {
+            font-size: 26px;
+        }
+    }
+    
+    &_content {
+        font-family: $fontText;
+        color: $colorSecudary;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        
+        @media all and (min-width: 768px) {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+    }
+    
+    &_btn {
+        font-family: $fontText;
+        color: $colorButtons;
+        font-size: 20px;
+        text-align: center;
+        background-color: $colorPrimary;
+        width: 76px;
+        line-height: 39px;
+        border: $colorButtons solid 2px;
+        border-radius: 22.5px;
+        margin-bottom: 45px;
+        transition: all ease 1s;
+        
+        @media all and (min-width: 768px) {
+            width: 91px;
+            margin-bottom: 60px;
+        }
+        
+        @media all and (min-width: 1200px) {
+            width: 160px;
+        }
+        
+        &:hover {
+            background-color: $colorButtons;
+            color: $colorPrimary;
+            box-shadow: 2px 2px 5px grey;
+        }
+    }
+}
+
+.main_secondary {
+    background-color: $colorIceBlue;
+    padding-top: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 45px;
+
+    @media all and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 27px;
+        padding: 30px 35px;
+    }
+
+    @media all and (min-width: 1200px) {
+        grid-gap: 26px;
+        padding: 60px 81px 0;
+    }
+    
+    &_title {
+        font-family: $fontTitle;
+        text-transform: capitalize;
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 0;  
+        
+        @media all and (min-width: 768px) {
+            grid-column: span 3;
+            margin-bottom: 18px;  
+        }
+
+        @media all and (min-width: 1200px) {
+            font-size: 32px;
+        }
+    }
+    
+    &_article {
+        text-align: center;
+        padding: 0 70px;
+
+        @media all and (min-width: 768px) {
+            grid-column: span 1;
+            padding: 0;
+        }
+        
+    }
+    
+    &_article_title {
+        font-family: $fontTitle;
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0;
+
+        @media all and (min-width: 768px) {
+            font-size: 24px;
+        }
+
+        @media all and (min-width: 1200px) {
+            margin-bottom: 14px;
+        }
+    }
+    
+    &_article_content {
+        font-family: $fontText;
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0;
+
+        @media all and (min-width: 768px) {
+            font-size: 20px;
+        }
+    }
+    
+    &_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media all and (min-width: 768px) {
+            grid-column: span 3;
+            margin-top: 33px;
+        }
+    }
+    
+    &_btn_content {
+        font-family: $fontText;
+        color: $colorPrimary;
+        font-size: 20px;
+        text-align: center;
+        background-color: $colorButtons;
+        width: 184px;
+        line-height: 39px;
+        border: $colorButtons solid 2px;
+        border-radius: 22.5px;
+        margin-bottom: 45px;
+        transition: all ease 1s;
+
+        @media all and (min-width: 768px) {
+            width: 210px;
+        }
+
+        @media all and (min-width: 1200px) {
+            width: 225px;
+            margin-bottom: 60px;
+        }
+        
+        &:hover {
+            background-color: $colorPrimary;
+            color: $colorButtons;
+            box-shadow: 2px 2px 5px grey;
+        }
+    }
+}
+
+
