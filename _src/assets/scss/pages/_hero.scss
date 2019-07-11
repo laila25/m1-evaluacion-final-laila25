@@ -21,10 +21,16 @@
 .hero_title {
     color: $colorPrimary;
     text-transform: uppercase;
+    font-family: $fontTitle;
+    font-size: 42px;
+    max-width: 300px;
+    text-align: center;
 }
 
 .hero_desc {
     color: $colorPrimary;
+    font-family: $fontText;
+    font-size: 16px;
 }
 
 .hero_button {
