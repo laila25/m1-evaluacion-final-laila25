@@ -1,13 +1,28 @@
 .main {
     padding: 0 15px;
+    
+    @media all and (min-width: 768px) {
+        padding: 0 39px;
+    }
+    
+    @media all and (min-width: 1200px) {
+        padding: 0 275px;
+    }
 }
 
 .main_text {
     font-family: $fontText;
     color: $colorLightBlue;
     font-size: 14px;
+    line-height: 30px;
     margin-top: 30px;
+    margin-bottom: 0;
     text-transform: capitalize;
+    
+    @media all and (min-width: 1200px) {
+        font-size: 16px;
+        margin-top: 60px;
+    }
 }
 
 .main_title {
@@ -17,6 +32,10 @@
     text-transform: capitalize;
     margin-block-start: 0;
     margin-block-end: 0;
+    
+    @media all and (min-width: 768px) {
+        font-size: 26px;
+    }
 }
 
 .main_content {
@@ -24,6 +43,12 @@
     color: $colorSecudary;
     font-size: 18px;
     margin-top: 15px;
+    margin-bottom: 30px;
+    
+    @media all and (min-width: 768px) {
+        font-size: 20px;
+        margin-top: 30px;
+    }
 }
 
 .main_btn {
@@ -31,9 +56,26 @@
     color: $colorButtons;
     font-size: 20px;
     text-align: center;
+    background-color: $colorPrimary;
     width: 76px;
-    line-height: 45px;
+    line-height: 39px;
     border: $colorButtons solid 2px;
     border-radius: 22.5px;
     margin-bottom: 45px;
+    transition: all ease 1s;
+    
+    @media all and (min-width: 768px) {
+        width: 91px;
+        margin-bottom: 60px;
+    }
+
+    @media all and (min-width: 1200px) {
+        width: 160px;
+    }
+}
+
+.main_btn:hover {
+    background-color: $colorButtons;
+    color: $colorPrimary;
+    box-shadow: 2px 2px 5px grey;
 }
