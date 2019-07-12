@@ -7,18 +7,116 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-
+    
     &_btn {
         background: url('../images/ico-arrow.svg') no-repeat $colorPrimary center;
         width: 45px;
         height: 45px;
         border-radius: 50%;
         position: absolute;
+        z-index: 1;
         top: -22.5px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         animation-name: button;
         animation-duration: 3s;
         animation-iteration-count: infinite;
+    }
+    
+    &_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        @media all and (min-width:768px) {
+            width: 100%;
+            padding: 45px 39px 0 39px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        @media all and (min-width:1200px) {
+            padding: 45px 370px 0 370px;
+        }
+    }
+    
+    &_nav {
+        padding-top: 60px;
+        
+        @media all and (min-width:768px) {
+            padding-top: 0;
+        }
+    }
+    
+    &_nav_menu {
+        list-style: none;
+        text-transform: uppercase;
+        padding: 0;
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        
+        @media all and (min-width:768px) {
+            text-align: left;
+            margin-top: 0;
+            width: 210px;
+            margin-bottom: 0;
+        }
+        
+        @media all and (min-width:1200px) {
+            width: 160px;
+        }
+    }
+    
+    &_nav_social_menu {
+        list-style: none;
+        text-transform: uppercase;
+        padding: 0;
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        
+        @media all and (min-width:768px) {
+            text-align: left;
+            margin-top: 0;
+            width: 210px;
+        }
+        
+        @media all and (min-width:1200px) {
+            width: 160px;
+        }
+    }
+    
+    &_footer {
+        text-align: center;
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 0;
+        
+        @media all and (min-width:768px) {
+            text-align: left;
+            order: -1;
+            width: 210px;
+        }
+        
+        @media all and (min-width:1200px) {
+            width: 160px;
+        }
+        
+        &_copy {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        
+        &_text {
+            margin-top: 0;
+        }
+        
+        &_heart {
+            color: $colorButtons;
+        }
     }
 }
 
@@ -37,45 +135,6 @@
     }
 }
 
-.footer_nav {
-    padding-top: 60px;
-}
 
-.footer_nav_menu {
-    list-style: none;
-    text-transform: uppercase;
-    padding: 0;
-    text-align: center;
-    font-size: 16px;
-    line-height: 30px;
-    margin-bottom: 30px;
-}
 
-.footer_nav_social_menu {
-    list-style: none;
-    text-transform: uppercase;
-    padding: 0;
-    text-align: center;
-    font-size: 16px;
-    line-height: 30px;
-    margin-bottom: 30px;
-}
-
-.footer_copy {
-    text-align: center;
-    font-size: 14px;
-    line-height: 30px;
-    margin-bottom: 0;
-}
-
-.footer_footer {
-    text-align: center;
-    font-size: 14px;
-    line-height: 30px;
-    margin-top: 0;
-
-    &_heart {
-        color: $colorButtons;
-    }
-}
 
