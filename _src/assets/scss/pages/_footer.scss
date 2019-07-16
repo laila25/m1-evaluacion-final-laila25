@@ -9,6 +9,7 @@
     position: relative;
     
     &_btn {
+        visibility: hidden;
         background: url('../images/ico-arrow.svg') no-repeat $colorPrimary center;
         width: 45px;
         height: 45px;
@@ -20,6 +21,10 @@
         animation-name: button;
         animation-duration: 3s;
         animation-iteration-count: infinite;
+
+        @media all and (min-width:768px) {
+            visibility: visible;
+        }
     }
     
     &_content {
@@ -94,6 +99,9 @@
         font-size: 14px;
         line-height: 30px;
         margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         
         @media all and (min-width:768px) {
             text-align: left;
@@ -112,6 +120,7 @@
         
         &_text {
             margin-top: 0;
+            order: -1;
         }
         
         &_heart {
